@@ -1,8 +1,8 @@
 import * as request from "../lib/request";
 
 // const baseUrl = 'https://api-n4krry33ka-ew.a.run.app/data/hotels'
-const baseUrl = 'http://localhost:3030/data/assistance'
-// const baseUrl = 'http://localhost:3030/jsonstore/hotels'
+// const baseUrl = 'http://localhost:3030/data/assistant'
+const baseUrl = 'http://localhost:3030/jsonstore/assistant'
 
 export const getAll = async () => {
     const result = await request.get(baseUrl);

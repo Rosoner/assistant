@@ -1403,16 +1403,34 @@
     	},
         assistance: 
         {
-            "3564027f-adcd-4425-b2c0-1253d2386c0c": {
-            "name": "Roof repaired",
-            "location": "Pirdop, Sofia district",
-            "description": "Common repair of house roof. One stage building with four line roof and two chimneys",
-            "imageUrl": "https://gradat.bg/sites/default/files/styles/online_magazine__1920x1080/public/img_5490.jpg?itok=lGfPV0hR",
-            "summary": "Fix the roof of house",
-            "equipment": "Wood, ceramic materials, instruments",
-            "link": "https://www.hyatt.com/en-US/hotel/bulgaria/hyatt-regency-pravets-resort/sofrp?&src=bbm_sem_bbm_search_google_eame_rooms_brand_catchall_All_Hyatt_destination_Bulgaria_Pravets_hyatt%20pravets&mckv=s-dc_pcrid_663126375792_mtid_5297kx13790&gad_source=1&gclid=CjwKCAiA9dGqBhAqEiwAmRpTC4wSIxb4gK-PF9k6Kg9NfCrmUJVoM5-5dCEebErQyW4Fn2Lv-HhIoBoCBqEQAvD_BwE&gclsrc=aw.ds",
-            "_id": "3564027f-adcd-4425-b2c0-1253d2386c0c"
-            }
+            "3564027f-adcd-4425-b2c0-1253g2356c0c": {
+            "car": "Mazda 6",   
+            "plate": "CO8016CX",
+            "distance": "206 000 km",
+            "type_service": "Tyres changes",
+            "addr_service": "Kalin, gsm:0883 012033",
+            "location": "Pirdop, Sofia district, ul. Sofijsko shose N6",
+            "date": "13.04.2024",
+            "description": "Change 4 tyres and balance" ,
+            "price": "10 lv",    
+            "imageUrl": "https://oil-standart.net/wp-content/uploads/2022/02/castrol-edge-5w40-5-litra.jpg",
+            "link": "https://motointegrator.com/bg/bg/serviz/zlatitsa/m46k9koo-et-doncho-pavlov",
+            "_id": "3566125f-adcc-4425-b2c0-1253d2386c3c"
+        },
+        "3563027f-adcd-4425-b2b0-1253d2386c0c": {
+            "car": "Mazda 60",
+            "plate": "CO8016CX",
+            "distance": "217 000 km",
+            "type_service": "Engine oil change",
+            "addr_service": "Doncho Pavlov, gsm:0883 002033",
+            "location": "Zlatitsa, Sofia district, ul. Sofijsko shose N6",
+            "date": "16.02.2024",
+            "description": "Change oil type: 5w 40 Castrol - 5 liters; Filter Cavo, Filter coupe",
+            "price": "40 lv",    
+            "imageUrl": "https://oil-standart.net/wp-content/uploads/2022/02/castrol-edge-5w40-5-litra.jpg",
+            "link": "https://motointegrator.com/bg/bg/serviz/zlatitsa/m46k9koo-et-doncho-pavlov",
+            "_id": "3564025f-adcd-4425-b2c0-1253d2386c3c"
+        }
         },
     	hotels: {
     		"3564027f-adcd-4425-b2c0-1253d2386c0c": {

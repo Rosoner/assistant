@@ -1,27 +1,29 @@
 
 {
     "3564027f-adcd-4425-b2c0-1253g2356c0c": {
+    "car": "Mazda 6",   
+    "plate": "CO8016CX",
+    "distance": "206 000 km",
     "type_service": "Tyres changes",
-    "add_service": "Kalin, gsm:0883 012033",
+    "addr_service": "Kalin, gsm:0883 012033",
     "location": "Pirdop, Sofia district, ul. Sofijsko shose N6",
     "date": "13.04.2024",
     "description": "Change 4 tyres and balance" ,
-    "price": "10 lv",
-    "plate": "CO8016CX",
-    "distance": "206 000 km",
+    "price": "10 lv",    
     "imageUrl": "https://oil-standart.net/wp-content/uploads/2022/02/castrol-edge-5w40-5-litra.jpg",
     "link": "https://motointegrator.com/bg/bg/serviz/zlatitsa/m46k9koo-et-doncho-pavlov",
     "_id": "3566125f-adcc-4425-b2c0-1253d2386c3c"
 },
 "3563027f-adcd-4425-b2b0-1253d2386c0c": {
-    "name": "Engine oil change",
-    "service": "Doncho Pavlov, gsm:0883 002033",
+    "car": "Mazda 6",
+    "plate": "CO8016CX",
+    "distance": "217 000 km",
+    "type_service": "Engine oil change",
+    "addr_service": "Doncho Pavlov, gsm:0883 002033",
     "location": "Zlatitsa, Sofia district, ul. Sofijsko shose N6",
     "date": "16.02.2024",
     "description": "Change oil type: 5w 40 Castrol - 5 liters; Filter Cavo, Filter coupe",
-    "price": "40 lv",
-    "plate": "CO8016CX",
-    "distance": "217 000 km",
+    "price": "40 lv",    
     "imageUrl": "https://oil-standart.net/wp-content/uploads/2022/02/castrol-edge-5w40-5-litra.jpg",
     "link": "https://motointegrator.com/bg/bg/serviz/zlatitsa/m46k9koo-et-doncho-pavlov",
     "_id": "3564025f-adcd-4425-b2c0-1253d2386c3c"
