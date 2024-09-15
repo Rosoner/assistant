@@ -33,19 +33,22 @@
 // }
 
 import { Routes, Route } from 'react-router-dom';
+import { AuthProvider } from './contexts/authContext';
 import Path from './paths';
 
 import Home from "./components/home/Home"
 import Footer from './components/footer/Footer.jsx';
 import AssistantList from './components/assistantList/AssistantList';
 import CarList from './components/carList/CarList';
+import Header from './components/header/Header';
 
 function App() {
 
 
   return (
-
-    <div id="box">
+<AuthProvider>
+<div id="box">
+      <Header />
       <Routes>
         <Route path={Path.Home} element={<Home />} />
         <Route path={Path.Assistants} element={<AssistantList />} />
@@ -56,8 +59,7 @@ function App() {
 
       <Footer />
     </div>
-
-
+</AuthProvider>
   )
 }
 

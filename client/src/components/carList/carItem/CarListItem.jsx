@@ -8,7 +8,8 @@ export default function carListItem({
     distance,
     imageUrl,
     description,
-    dateInit
+    dateInit,
+    location
 
 }) {
     return (
@@ -19,8 +20,8 @@ export default function carListItem({
                 <h1>{car}</h1>                
                 <h3>Car plate: {plate}</h3>
                 <h4>Distance: {distance}</h4>
-                <h6>Loacation: {location}</h6> 
-                <h6>Initial date: {dateInit}</h6>               
+                <h6>Service location: {location}</h6> 
+                <h5>Initial date: {dateInit}</h5>               
                 <div>
                     <p>Owner Ivan Stefanov{description}</p>
                 </div>

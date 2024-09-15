@@ -1,6 +1,6 @@
 
 {
-    "3556027f-adcd-4425-b2c0-1253t2356c0c": {
+    "3556027f-ad8d-4425-b2c0-1253t2356c0c": {
     "car": "Mazda 6",   
     "plate": "CO8016CX",
     "distance": "206 000 km",
@@ -12,21 +12,21 @@
     "price": "10 lv",    
     "imageUrl": "https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_default/v1/editorial/mazda-6-my19-index-1.png",
     "link": "https://motointegrator.com/bg/bg/serviz/zlatitsa/m46k9koo-et-doncho-pavlov",
-    "_idC": "3316125f-adcc-4425-b2cd-1253d2386c3c"
+    "_idc": "33161f5f-adcc-4425-b2cd-1253d2386c3c"
 },
-"3556027f-adcd-4825-b2c0-1203t2356c0c": {
+"3556027f-adcd-4895-b2c0-1203t2356c0c": {
     "car": "Mazda 6",   
     "plate": "CO8016CX",
-    "distance": "206 000 km",
-    "type_service": "Tyres changes",
+    "distance": "222 000 km",
+    "type_service": "Engine oil",
     "addr_service": "Kalin, gsm:0883 012033",
     "location": "Pirdop, Sofia district, ul. Sofijsko shose N6",
     "dateInit": "13.04.2024",
-    "description": "Change 4 tyres and balance" ,
+    "description": "Change engine oil. 5w30 - 5 liters" ,
     "price": "10 lv",    
     "imageUrl": "https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_default/v1/editorial/mazda-6-my19-index-1.png",
     "link": "https://motointegrator.com/bg/bg/serviz/zlatitsa/m46k9koo-et-doncho-pavlov",
-    "_idC": "3356165f-adcc-4425-b2cd-1253d2386c3c"
+    "_idc": "3356165f-abcc-4425-b2cd-1253d2386c3c"
 }
 
 }
