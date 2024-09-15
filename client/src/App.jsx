@@ -38,6 +38,7 @@ import Path from './paths';
 import Home from "./components/home/Home"
 import Footer from './components/footer/Footer.jsx';
 import AssistantList from './components/assistantList/AssistantList';
+import CarList from './components/carList/CarList';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
       <Routes>
         <Route path={Path.Home} element={<Home />} />
         <Route path={Path.Assistants} element={<AssistantList />} />
+        <Route path={Path.Cars} element={<CarList />} />
 
       </Routes>
 

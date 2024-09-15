@@ -1,5 +1,6 @@
 //import AuthContext from '../../contexts/authContext';
 import { useContext } from 'react';
+import { Link } from "react-router-dom";
 
 export default function Home() {
     
@@ -18,6 +19,10 @@ export default function Home() {
 
                 <div className="welcome-message">
                     <div className="slogan">
+                    {/* <Link to={`assistants}`} className="assistants-button">Your Cars</Link> */}
+                    <Link to= '/assistants' className="assistants-button">Your Assistants</Link>
+                    <>*******</>
+                    <Link to= '/cars' className="assistants-button">Your Cars</Link>
                         <h2>Welcome in your car assistant!</h2>
                         { 
                         
