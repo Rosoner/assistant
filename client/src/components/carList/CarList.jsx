@@ -42,7 +42,7 @@ export default function CarList() {
             <div className="logo-car">                
                 <img src="https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_default/v1/editorial/mazda-6-my19-index-1.png" alt="logo"/>
                 {/* <Link to={`/cars/${cars._id}`} className="assistants-button">Car Info</Link> */}
-                <h1>List of cars IVAN:</h1>               
+                <h1>List of cars:</h1>               
             </div>
 
             

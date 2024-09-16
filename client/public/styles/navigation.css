@@ -1,0 +1,159 @@
+body {
+    background-image: url('../images/hotel_2.png');
+    background-color: #32485e;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+/* 
+.home-page {    
+    background-image: url(../images/hotel_3.png);
+} */
+
+.auth {
+    width: 100px;
+    margin: 8em auto;
+}
+
+header,
+footer {
+    
+    background-color: #29303c;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.home {
+    font-size: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 10px;
+}
+
+header h1 {
+    display: inline-block;
+    background-color: #29303c;
+    color: white;
+    margin-bottom: auto;
+}
+
+header nav {
+    font-size: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+}
+
+header nav>* {
+    float: left;
+}
+
+footer {
+    padding: 0.5em;
+    width: 100%;
+    /* position: absolute; */
+    left: 0;
+    bottom: 0;
+}
+
+nav a {
+    margin: 0 0.5em;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: rgb(#d3d3cc);
+    font-weight: bolder;
+}
+
+.home:hover {
+    color: rgb(113 175 193);
+}
+
+#user,
+#guest {
+    margin: 0;
+    padding: 0;
+}
+
+.section-site-header {
+    color: #fff;
+    background-color: #29303c;
+}
+
+.section-site-header .container {
+    
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+}
+
+.section-site-header .site-title {
+    display: none;
+}
+
+.section-site-header a {
+    color: #fff;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    width: 10px;
+    /* position: absolute; */
+    /* margin-rigth: 15px;
+    margin-top: 10px;
+    height: 60px; */
+    /* overflow: overlay;
+    display: block;
+    width: 100%;
+    height: auto; */
+}
+
+.logo-catalog{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    width: 20px;
+    position: absolute;
+    margin-left: 56px;
+    margin-top: 25px;
+    height: 50px;
+    /* overflow: overlay;
+    display: block;
+    width: 100%;
+    height: auto; */
+}
+
+.logo-details{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    width: 20px;
+    position: absolute;
+    margin-left: 838px;
+    margin-top: -68px;
+    height: 50px;
+}
+
+#official-site {
+    text-align: end;
+    margin-right: 20px;
+}
+
+.home> img {
+    max-width: 50px;
+    max-height: 50px;
+}

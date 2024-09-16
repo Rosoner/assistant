@@ -17,11 +17,11 @@ export default function Header() {
                 {/* <img src="../images/hotel_small.png" alt="hero" 
                  /> */}
                  <Link className="home" to="/">
-                    <img src="../images/hotel_small.png" alt="logo"
+                    <img src="../images/car-repair.jpg" alt="logo"
                         title="Go to home page" />
                  </Link>
             </div>
-            <h1><Link className="home" to="/">Best Hotels</Link></h1>
+            <h1><Link className="home" to="/">Assistant</Link></h1>
             <nav>
                 <Link to="/assistants">Assistants</Link>
                 {isAuthenticated && (
