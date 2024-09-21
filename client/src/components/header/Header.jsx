@@ -21,9 +21,10 @@ export default function Header() {
                         title="Go to home page" />
                  </Link>
             </div>
-            <h1><Link className="home" to="/">Assistant</Link></h1>
+            <h1><Link className="home" to="/">API IMS</Link></h1>
             <nav>
                 <Link to="/assistants">Assistants</Link>
+                <Link to="/cars">My Cars</Link>
                 {isAuthenticated && (
                     <div id="user">
                         <Link to="/assistants/create">NEW Service</Link>

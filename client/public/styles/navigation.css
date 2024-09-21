@@ -22,7 +22,7 @@ body {
 header,
 footer {
     
-    background-color: #29303c;
+    background-color: #112103;
     width: 100%;
     overflow: hidden;
     color: white;
@@ -42,7 +42,7 @@ header {
 
 header h1 {
     display: inline-block;
-    background-color: #29303c;
+    /* background-color: #29303c; */
     color: white;
     margin-bottom: auto;
 }
@@ -73,7 +73,7 @@ nav a {
 
 nav a:hover {
     cursor: pointer;
-    color: rgb(#d3d3cc);
+    color: rgb(113 175 193);
     font-weight: bolder;
 }
 

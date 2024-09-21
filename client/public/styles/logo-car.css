@@ -11,6 +11,18 @@
     margin-bottom: 20px;
 }
 
+/* #catalog-page .logo-car1>img{
+    background-color:  #e7ece8;
+    
+    overflow: hidden;
+    border-radius: 7px;
+    
+    height: auto;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+} */
+
 .logo-car { 
     overflow: hidden;
     
@@ -29,8 +41,8 @@
     padding: 5px;
     width: 200px;
 
-
-    color: #d8d6a2;
+   
+    color: #dbd9a4;
     font-family: "Agency FB";
     font-size: 48px;
     font-weight: 600;

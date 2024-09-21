@@ -37,6 +37,9 @@ import { AuthProvider } from './contexts/authContext';
 import Path from './paths';
 
 import Home from "./components/home/Home"
+import Login from './components/login/Login';
+import Logout from './components/logout/Logout';
+import Register from './components/register/Register';
 import Footer from './components/footer/Footer.jsx';
 import AssistantList from './components/assistantList/AssistantList';
 import CarList from './components/carList/CarList';
@@ -51,8 +54,12 @@ function App() {
       <Header />
       <Routes>
         <Route path={Path.Home} element={<Home />} />
+        <Route path={Path.Login} element={<Login />} />
+        <Route path={Path.Register} element={<Register />} />
         <Route path={Path.Assistants} element={<AssistantList />} />
         <Route path={Path.Cars} element={<CarList />} />
+
+        <Route path={Path.Logout} element={<Logout />} />
 
       </Routes>
 
