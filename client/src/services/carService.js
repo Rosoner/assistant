@@ -16,14 +16,14 @@ export const getOne = async (_idC) => {
     return result;
 }
 
-export const create = async (hotelData) => {
-    const result = await request.post(baseUrl, hotelData);
+export const create = async (carData) => {
+    const result = await request.post(baseUrl, carData);
 
     return result;
 };
 
-export const edit = async (hotelId, hotelData) => {
-    const result = await request.put(`${baseUrl}/${hotelId}`, hotelData);
+export const edit = async (hotelId, carData) => {
+    const result = await request.put(`${baseUrl}/${hotelId}`, carData);
 
     return result;
 };

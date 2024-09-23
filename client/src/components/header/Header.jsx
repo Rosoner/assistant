@@ -27,7 +27,7 @@ export default function Header() {
                 <Link to="/cars">My Cars</Link>
                 {isAuthenticated && (
                     <div id="user">
-                        <Link to="/assistants/create">NEW Service</Link>
+                        <Link to="/cars/create">NEW Car model</Link>
                         <Link to="/logout">LOGOUT</Link>
                         {/* <span style={{ color: 'yellow',}}>| Logged in: {username} |</span> */}
                         <Link to="/myaccount"><span style={{ color: 'yellow',}}>| Info user: {username} |</span></Link>

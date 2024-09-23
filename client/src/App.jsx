@@ -40,6 +40,7 @@ import Home from "./components/home/Home"
 import Login from './components/login/Login';
 import Logout from './components/logout/Logout';
 import Register from './components/register/Register';
+import CarCreate from './components/car-create/CarCreate';
 import Footer from './components/footer/Footer.jsx';
 import AssistantList from './components/assistantList/AssistantList';
 import CarList from './components/carList/CarList';
@@ -60,6 +61,7 @@ function App() {
         <Route path={Path.Cars} element={<CarList />} />
 
         <Route path={Path.Logout} element={<Logout />} />
+        <Route path={Path.Create} element={<CarCreate />} />
 
       </Routes>
 

@@ -2,7 +2,7 @@ const Path = {
     Home: '/',
     Assistants: '/assistants', 
     Cars: '/cars', 
-    Create:'/hotels/create',
+    Create:'/cars/create',
     HotelDetails: '/hotels/:hotelId', 
     HotelEdit: '/hotels/:hotelId/edit',
     Login: '/login',
