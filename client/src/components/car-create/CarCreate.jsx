@@ -25,7 +25,7 @@ export default function CarCreate() {
         <section id="create-page" className="auth">
             <form id="create" onSubmit={createCarSubmitHandler}>
                 <div className="container">
-                    <h1>Create new Car model</h1>
+                    <h1>Add new Car model</h1>
                     <label htmlFor="leg-name">Car model:</label>
                     <input type="text" id="car" name="car" placeholder="Enter car model...(required)" required/>
 
