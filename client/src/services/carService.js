@@ -2,7 +2,8 @@ import * as request from "../lib/request";
 
 // const baseUrl = 'https://api-n4krry33ka-ew.a.run.app/data/hotels'
 // const baseUrl = 'http://localhost:3030/data/assistant'
-const baseUrl = 'http://localhost:3030/jsonstore/car'
+const baseUrl = 'http://localhost:3030/jsonstore/cars'
+
 
 export const getAll = async () => {
     const result = await request.get(baseUrl);
@@ -10,8 +11,8 @@ export const getAll = async () => {
     return Object.values(result);
 };
 
-export const getOne = async (_idC) => {
-    const result = await request.get(`${baseUrl}/${_idC}`, );
+export const getOne = async (_idc) => {
+    const result = await request.get(`${baseUrl}/${_idc}`, );
 
     return result;
 }
@@ -22,10 +23,10 @@ export const create = async (carData) => {
     return result;
 };
 
-export const edit = async (hotelId, carData) => {
-    const result = await request.put(`${baseUrl}/${hotelId}`, carData);
+export const edit = async (_idc, carData) => {
+    const result = await request.put(`${baseUrl}/${_idc}`, carData);
 
     return result;
 };
  
-export const remove = async (hotelId) => request.remove(`${baseUrl}/${hotelId}`);
+export const remove = async (_idc) => request.remove(`${baseUrl}/${_idc}`);

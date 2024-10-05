@@ -32,6 +32,9 @@ export default function CarCreate() {
                     <label htmlFor="plate">Plate:</label>
                     <input type="text" id="plate" name="plate" placeholder="Enter your car plate...(required)" required/>
 
+                    <label htmlFor="owner">Owner:</label>
+                    <input type="text" id="owner" name="owner" placeholder="Enter owner name...(required)" required/>
+
                     <label htmlFor="dateInit">Initial date:</label>
                     <input type="text"  id="dateInit" name="dateInit" placeholder="Enter initial date of car..."/>
 

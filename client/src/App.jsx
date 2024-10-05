@@ -45,6 +45,7 @@ import Footer from './components/footer/Footer.jsx';
 import AssistantList from './components/assistantList/AssistantList';
 import CarList from './components/carList/CarList';
 import Header from './components/header/Header';
+import CarDetails from './components/car-details/CarDetails';
 
 function App() {
 
@@ -59,7 +60,7 @@ function App() {
         <Route path={Path.Register} element={<Register />} />
         <Route path={Path.Assistants} element={<AssistantList />} />
         <Route path={Path.Cars} element={<CarList />} />
-
+        <Route path="/cars/:_idc" element={<CarDetails />} />
         <Route path={Path.Logout} element={<Logout />} />
         <Route path={Path.Create} element={<CarCreate />} />
 

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useContext } from 'react';
 
 import * as assistantService from '../../services/assistantService.js';
 // import * as carService from '../../services/carService.js';
@@ -15,6 +16,13 @@ export default function AssistantList() {
     const [assistants, setAssistants] = useState([]);
     // const [cars, setCars] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
+
+    
+    const {
+            username,
+            isAuthenticated,
+            
+        } = useContext(AuthContext);
 
     useEffect(() => {
         setIsLoading(true);

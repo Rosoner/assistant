@@ -23,7 +23,7 @@ export default function Header() {
             </div>
             <h1><Link className="home" to="/">API IMS</Link></h1>
             <nav>
-                <Link to="/assistants">Assistants</Link>
+                {/* <Link to="/assistants">Assistants</Link> */}
                 <Link to="/cars">My Cars</Link>
                 {isAuthenticated && (
                     <div id="user">

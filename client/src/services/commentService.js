@@ -1,11 +1,11 @@
 import * as request from '../lib/request';
 
-const baseUrl = 'https://api-n4krry33ka-ew.a.run.app/data/comments';
-// const baseUrl = 'http://localhost:3030/data/comments';
+//const baseUrl = 'https://api-n4krry33ka-ew.a.run.app/data/comments';
+const baseUrl = 'http://localhost:3030/data/assistants';
 
-export const getAll = async (hotelId) => {
+export const getAll = async (carId) => {
     const query = new URLSearchParams({
-        where: `hotelId="${hotelId}"`,
+        where: `carId="${carId}"`,
         load: `owner=_ownerId:users`,
     });
 
@@ -14,9 +14,9 @@ export const getAll = async (hotelId) => {
     return result;
 };
 
-export const create = async (hotelId, text) => {
+export const create = async (carId, text) => {
     const newComment = await request.post(baseUrl, {
-        hotelId,
+        carId,
         text,
     });
 
