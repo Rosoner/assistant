@@ -10,15 +10,15 @@ export default function CarDetails() {
     const {username} = useContext(AuthContext);
     const [car, setCar] = useState({});
     const [comments, setComments] = useState([]);
-    const { _idc } = useParams();
+    const { carId } = useParams();
 
     useEffect(() => {
-        carService.getOne(_idc)
+        carService.getOne(carId)
             .then(setCar);
 
-        commentService.getAll(_idc)
+        commentService.getAll(carId)
             .then(setComments);
-    }, [_idc]);
+    }, [carId]);
 
     const addCommentHandler = async (e) => {
         e.preventDefault();
@@ -26,7 +26,7 @@ export default function CarDetails() {
         const formData = new FormData(e.currentTarget);
 
         const newComment = await commentService.create(
-            _idc,
+            carId,
             formData.get('comment')
         );
 
@@ -42,18 +42,18 @@ export default function CarDetails() {
                     {/* <h2 style={{ color: '#9b4e00', fontSize: 30, padding: 0}}>{car}</h2>   */}
                     
                     <img className="game-img" src={car.imageUrl} alt={car.title} />
-                    <h1>CAR{car.title}</h1>
-                    <span className="levels">MaxLevel: {car.maxLevel}</span>
-                    <p className="type">{car.category}</p>
+                    <h1>CAR{car.car}</h1>
+                    <span className="levels">Plate: {car.plate}</span>
+                    <p className="type">{car.price}</p>
                 </div>
 
-                <p className="text">{car.summary}</p>
+                <p className="text">Owner{car.owner}</p>
 
                 <div className="details-comments">
                     <h2>Comments:</h2>
                     <ul>
-                        {comments.map(({ _id, text, owner: { username } }) => (
-                            <li key={_id} className="comment">
+                        {comments.map(({ _idc, text, owner: { username } }) => (
+                            <li key={_idc} className="comment">
                                 <p>{username}: {text}</p>
                             </li>
                         ))}

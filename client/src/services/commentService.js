@@ -1,7 +1,8 @@
 import * as request from '../lib/request';
 
 //const baseUrl = 'https://api-n4krry33ka-ew.a.run.app/data/comments';
-const baseUrl = 'http://localhost:3030/data/assistants';
+ const baseUrl = 'http://localhost:3030/data/comments';
+// const baseUrl = 'http://localhost:3030/jsonstore/comments'
 
 export const getAll = async (carId) => {
     const query = new URLSearchParams({

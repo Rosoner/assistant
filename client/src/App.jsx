@@ -60,7 +60,7 @@ function App() {
         <Route path={Path.Register} element={<Register />} />
         <Route path={Path.Assistants} element={<AssistantList />} />
         <Route path={Path.Cars} element={<CarList />} />
-        <Route path="/cars/:_idc" element={<CarDetails />} />
+        <Route path="/cars/:carId" element={<CarDetails />} />
         <Route path={Path.Logout} element={<Logout />} />
         <Route path={Path.Create} element={<CarCreate />} />
 
