@@ -63,7 +63,6 @@ function App() {
         <Route path="/cars/:carId" element={<CarDetails />} />
         <Route path={Path.Logout} element={<Logout />} />
         <Route path={Path.Create} element={<CarCreate />} />
-
       </Routes>
 
 

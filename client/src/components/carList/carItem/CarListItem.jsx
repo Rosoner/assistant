@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useContext } from 'react';
 
 export default function carListItem({
-    _idc,
+    _id,
     car,
     plate,
     distance,
@@ -40,7 +40,7 @@ export default function carListItem({
                 <div>
                     <p>{description}</p>
                 </div> */}
-                <Link to={`/cars/${_idc}`} className="details-button">Car Assistance</Link>
+                <Link to={`/cars/${_id}`} className="details-button">Car Assistance</Link>
                 <p></p>
                 <Link to={`/assistants/${username}`} className="details-button">Car Info</Link>
             </div>
