@@ -12,6 +12,13 @@ export default function CarDetails() {
     const [comments, setComments] = useState([]);
     const { carId } = useParams();
 
+    const date = new Date();
+
+    let day = date.getDate();
+    let month = date.getMonth() + 1;
+    let year = date.getFullYear()
+    let currentDate = `${day}-${month}-${year}`;
+
     useEffect(() => {
         carService.getOne(carId)
             .then(setCar);
@@ -34,27 +41,32 @@ export default function CarDetails() {
     }
 
     return (
-        <section id="game-details">
+        <section id="car-details">
             <h1>Car Details</h1>
             <div className="info-section">
-                <div className="game-header">
+                <div className="car-header">
 
                     {/* <h2 style={{ color: '#9b4e00', fontSize: 30, padding: 0}}>{car}</h2>   */}
                     
-                    <img className="game-img" src={car.imageUrl} alt={car.title} />
-                    <h1>CAR{car.car}</h1>
+                    <img className="car-img" src={car.imageUrl} alt={car.car} />
+                    <h1>{car.car}</h1>
                     <span className="levels">Plate: {car.plate}</span>
                     <p className="type">{car.price}</p>
                 </div>
 
-                <p className="text">Owner{car.owner}</p>
+                <p className="text">Owner: {car.owner}</p>
 
                 <div className="details-comments">
+
+
+                    
                     <h2>Comments:</h2>
                     <ul>
                         {comments.map(({ _id, text, owner: { username } }) => (
                             <li key={_id} className="comment">
-                                <p>{username}: {text}</p>
+                                
+                                
+                                <p>{currentDate}: {username}: {text}</p>
                             </li>
                         ))}
                     </ul>
@@ -64,7 +76,7 @@ export default function CarDetails() {
                     )}
                 </div>
 
-                {/* <!-- Edit/Delete buttons ( Only for creator of this game )  -->
+                {/* <!-- Edit/Delete buttons ( Only for creator of this car )  -->
                 <div className="buttons">
                     <a href="#" className="button">Edit</a>
                     <a href="#" className="button">Delete</a>
