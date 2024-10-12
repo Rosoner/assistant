@@ -52,9 +52,18 @@ export default function CarDetails() {
                     <h1>{car.car}</h1>
                     <span className="levels">Plate: {car.plate}</span>
                     <p className="type">{car.price}</p>
+                    
                 </div>
 
                 <p className="text">Owner: {car.owner}</p>
+                
+                <p className="type">Distance:{car.distance}</p>
+                <br></br>
+                <p className="type">DateInit:{car.dateInit}</p>
+                <br></br>
+                <p className="type">Location:{car.location}</p>
+                <br></br>
+                <p className="type">Description:{car.description}</p>
 
                 <div className="details-comments">
 
@@ -63,10 +72,8 @@ export default function CarDetails() {
                     <h2>Comments:</h2>
                     <ul>
                         {comments.map(({ _id, text, owner: { username } }) => (
-                            <li key={_id} className="comment">
-                                
-                                
-                                <p>{currentDate}: {username}: {text}</p>
+                            <li key={_id} className="comment">                               
+                                <p>{username}: ({currentDate}) {text}</p>
                             </li>
                         ))}
                     </ul>
@@ -86,7 +93,7 @@ export default function CarDetails() {
             <article className="create-comment">
                 <label>Add new assitance:</label>
                 <form className="form" onSubmit={addCommentHandler}>
-                    <textarea name="comment" placeholder="Add more details......"></textarea>
+                    <textarea name="comment" placeholder="Add new assistance and current distance of your car..."></textarea>
                     <input className="btn submit" type="submit" value="Add assistance" />
                 </form>
             </article>
