@@ -55,15 +55,10 @@ export default function CarDetails() {
                     
                 </div>
 
-                <p className="text">Owner: {car.owner}</p>
-                
-                <p className="type">Distance:{car.distance}</p>
+                <p className="text">Owner: {car.owner}</p>                
+                <p className="type">Engine type: {car.engine}</p>
                 <br></br>
-                <p className="type">DateInit:{car.dateInit}</p>
-                <br></br>
-                <p className="type">Location:{car.location}</p>
-                <br></br>
-                <p className="type">Description:{car.description}</p>
+           
 
                 <div className="details-comments">
 
@@ -76,7 +71,7 @@ export default function CarDetails() {
                                 <p>{username}: ({currentDate}) {text}</p>
                             </li>
                         ))}
-                    </ul>
+                    </ul> 
 
                     {comments.length === 0 && (
                         <p className="no-comment">No comments.</p>

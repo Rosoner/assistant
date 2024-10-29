@@ -1,9 +1,25 @@
 import { useNavigate } from 'react-router-dom';
+import { useState } from "react";
 
 import * as carService from '../../services/carService';
 
 export default function CarCreate() {
     const navigate = useNavigate();
+
+   
+        let engines = [
+            { label: 'LPG'},
+            { label: 'Gasoline'},
+            { label: 'Diesel'},
+            { label: 'Electric'},
+        ]
+         let [engine, setEngine] = useState('Select type engine:')
+
+         let handleEngineChange = (e) => {
+             setEngine(e.target.value)
+         }
+
+    
     
     const createCarSubmitHandler = async (e) => {
         e.preventDefault();
@@ -45,7 +61,30 @@ export default function CarCreate() {
                     <input type="text" id="imageUrl" name="imageUrl" placeholder="Upload a photo..." />
 
                     <label htmlFor="description">Short description:</label>
-                    <textarea name="description" id="description" placeholder="Write some description of your car...(required)" required></textarea>                    
+                    <textarea name="description" id="description" placeholder="Write some description of your car...(required)" required></textarea> 
+
+                    <label htmlFor="engine">Type engine:</label>
+                    <input type="text" id="engine.label" name="engine" placeholder={engine}/>
+                    {/* <label htmlFor="engine">engine:</label>
+                    <textarea name="engine" id="engine" placeholder={engine.label} required></textarea>  */}
+
+                    <div className='App'>
+                 
+
+                    
+                    <br />
+
+                    <select onChange={handleEngineChange}>
+                        <option value='Select engine'>--Select engine--</option>
+                        {engines.map((engine) => (
+                        <option key={engine.label} value={engine.value}>
+                                {engine.label}
+                        </option>
+                        ))}
+
+                    </select>
+
+                    </div>            
 
                 
                     <input className="btn submit" type="submit" value="Create" />
@@ -54,3 +93,35 @@ export default function CarCreate() {
         </section>
     );
 }
+
+
+{/* <div>
+
+<label>
+
+Please choose engine type: 
+
+<select>
+
+    <option value="diesel">Diesel</option>
+
+    <option value="gasoline">Gasoline</option>
+
+    <option value="lpg">LPG</option>
+
+    <option value="electric">Electric</option>
+
+</select>
+
+</label>
+
+</div>  */}
+
+
+{/* <select>
+<option value='Select engine'>--Select engine--</option>
+{engines.map((engine) => (
+<option value={engine.value}>{engine.label}</option>
+))}
+
+</select> */}
