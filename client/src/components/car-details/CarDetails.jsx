@@ -62,8 +62,8 @@ export default function CarDetails() {
 
                 <div className="details-comments">
 
-
                     
+                    <br></br>
                     <h2>Comments:</h2>
                     <ul>
                         {comments.map(({ _id, text, owner: { username } }) => (
@@ -72,10 +72,12 @@ export default function CarDetails() {
                             </li>
                         ))}
                     </ul> 
+                    
 
                     {comments.length === 0 && (
                         <p className="no-comment">No comments.</p>
                     )}
+                    <br></br>
                 </div>
 
                 {/* <!-- Edit/Delete buttons ( Only for creator of this car )  -->

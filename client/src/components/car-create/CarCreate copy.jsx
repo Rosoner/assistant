@@ -1,23 +1,23 @@
 import { useNavigate } from 'react-router-dom';
-
-// import { Dropdown } from "../dropdown/Dropdown.jsx";
+import { useState } from "react";
+import { dropdown } from "../dropdown/dropdown.jsx";
 
 import * as carService from '../../services/carService';
 
 export default function CarCreate() {
     const navigate = useNavigate();
 
-    // const options = [
-    //     { label: "LPG", value: "LPG" },
-    //     { label: "Gasoline", value: "Gasoline" },
-    //     { label: "Diesel", value: "Diesel" },
-    //     { label: "Electric", value: "Electric" }
-    //   ];
+    const options = [
+        { label: "LPG", value: "LPG" },
+        { label: "Gasoline", value: "Gasoline" },
+        { label: "Diesel", value: "Diesel" },
+        { label: "Electric", value: "Electric" }
+      ];
 
    
-    //   const handleSelect = (selectedOption) => {
-    //     console.log("Selected option:", selectedOption);
-    //   };
+      const handleSelect = (selectedOption) => {
+        console.log("Selected option:", selectedOption);
+      };
 
     
     
@@ -63,15 +63,15 @@ export default function CarCreate() {
                     <label htmlFor="description">Short description:</label>
                     <textarea name="description" id="description" placeholder="Write some description of your car...(required)" required></textarea> 
 
-                    {/* <label htmlFor="engine">Type engine:</label>
-                    <input type="text" id="engine.label" name="engine" placeholder={engine}/> */}
+                    <label htmlFor="engine">Type engine:</label>
+                    <input type="text" id="engine.label" name="engine" placeholder={engine}/>
                     {/* <label htmlFor="engine">engine:</label>
                     <textarea name="engine" id="engine" placeholder={engine.label} required></textarea>  */}
 
-                        {/* <div className="App">
+                        <div className="App">
                             <h1>Dropdown Menu Example</h1>
                             <Dropdown options={options} onSelect={handleSelect} />
-                        </div>            */}
+                        </div>           
 
                 
                     <input className="btn submit" type="submit" value="Create" />
