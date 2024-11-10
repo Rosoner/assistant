@@ -1,22 +1,18 @@
 import { Link } from "react-router-dom";
-import { useContext } from 'react';
+// import { useContext } from 'react';
 
 export default function carListItem({
     _id,
-    car,
+    name,
     plate,
-    distance,
     imageUrl,
-    description,
-    dateInit,
-    location,
     owner,
     engine
-},
-{
-    username,
-    isAuthenticated,  
 }
+// ,{
+//     username,
+//     isAuthenticated,  
+// }
 
 
 ) {
@@ -25,7 +21,7 @@ export default function carListItem({
             <div className="allAssistants-info">
                 <img src={imageUrl} />
                 
-                <h2 style={{ color: '#9b4e00', fontSize: 30, padding: 0}}>{car}</h2>  
+                <h2 style={{ color: '#9b4e00', fontSize: 30, padding: 0}}>{name}</h2>  
                 <p></p>              
                 <h3 style={{ color: 'black', fontSize: 10, padding: 0}}>PLATE: </h3>
                 <h4 style={{ color: 'darkblue', fontSize: 16, padding: 0}}>{plate}</h4>
@@ -43,9 +39,10 @@ export default function carListItem({
                 <div>
                     <p>{description}</p>
                 </div> */}
+                
                 <Link to={`/cars/${_id}`} className="details-button">Car Assistance</Link>
                 <p></p>
-                <Link to={`/assistants/${username}`} className="details-button">Car Info</Link>
+                {/* <Link to={`/cars/${username}`} className="details-button">Car Info</Link> */}
             </div>
         </div>
     );

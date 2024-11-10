@@ -47,7 +47,7 @@ export default function CarList() {
 
             
             {cars.map(car => (
-                <CarListItem key={car._idc} {...car} />
+                <CarListItem key={car._id} {...car} />
             ))}
 
             {cars.length === 0 && (

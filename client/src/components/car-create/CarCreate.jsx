@@ -43,7 +43,7 @@ export default function CarCreate() {
                 <div className="container">
                     <h1>Add new Car model</h1>
                     <label htmlFor="leg-name">Car model:</label>
-                    <input type="text" id="car" name="car" placeholder="Enter car model...(required)" required/>
+                    <input type="text" id="name" name="name" placeholder="Enter car model...(required)" required/>
 
                     <label htmlFor="plate">Plate:</label>
                     <input type="text" id="plate" name="plate" placeholder="Enter your car plate...(required)" required/>

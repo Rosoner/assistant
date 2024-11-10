@@ -1,7 +1,7 @@
 
 {
-    "3556027f-ad8d-4425-b2c0-1253t2356c0c": {
-    "car": "Mazda 6",
+    "33161f5f-adcc-4425-b2cd-1253d2386c3c": {
+    "name": "Mazda 6",
     "owner": "Ivan Stefanov",  
     "plate": "CO8016CX",
     "distance": "206 000 km",
@@ -16,8 +16,8 @@
     "link": "https://motointegrator.com/bg/bg/serviz/zlatitsa/m46k9koo-et-doncho-pavlov",
     "_id": "33161f5f-adcc-4425-b2cd-1253d2386c3c"
 },
-"3556027f-adcd-4895-b2c0-1203t2356c0c": {
-    "car": "Volvo S40", 
+"3356165f-abcc-4435-b2cd-1253d2386c3c": {
+    "name": "Volvo S40", 
     "owner": "Ivan Stefanov",   
     "plate": "CO7530AN",
     "distance": "146 000 km",
