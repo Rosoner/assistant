@@ -31,13 +31,13 @@ export default function Home() {
                         }                        
                     </div>
                 </div>
-                <img src="../images/Picture_1.png" alt="hotel" />
-                <img src="../images/Picture_1.png" alt="hotel" />
-                <img src="../images/Picture_1.png" alt="hotel" />
-            <div>
-                {/* <div id="home-img">
-                    <img src="../images/Hotel_1.png" alt="hotel" />
-                </div> */}
+                    {/* <img src="../images/Picture_1.png" alt="hotel" />
+                    <img src="../images/Picture_1.png" alt="hotel" />
+                    <img src="../images/Picture_1.png" alt="hotel" /> */}
+                <div>
+                <div id="home-img">
+                    <img src="../images/CarSevice_2.png" alt="hotel" />
+                </div>
                 
             </div>
 

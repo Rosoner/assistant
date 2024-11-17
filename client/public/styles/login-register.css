@@ -88,7 +88,7 @@ input[type="email"] {
     margin-top: 10px;
     font-size: 24px;
     border-radius: 50px;
-    box-shadow: inset 6px 6px 6px #c0c2c5, inset -6px -6px 6px white;
+    box-shadow: inset 6px 6px 6px #191e18, inset -6px -6px 6px white;
 }
 
 label[for="terms"]>input {
@@ -97,7 +97,7 @@ label[for="terms"]>input {
 
 .btn.submit {
     margin-top: 30px;
-    background: #778e9c;
+    background: #282f28;
     height: 60px;
     border-radius: 20px;
     color: white;
