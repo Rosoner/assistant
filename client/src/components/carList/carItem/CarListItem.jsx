@@ -27,6 +27,7 @@ export default function carListItem({
                 <h4 style={{ color: 'darkblue', fontSize: 16, padding: 0}}>{plate}</h4>
                 <p></p>
                 <h3 style={{ color: 'black', fontSize: 10, padding: 0}}>OWNER: </h3>
+                <h3 style={{ color: 'black', fontSize: 10, padding: 0}}>OWNER MY: </h3>
                 <h5 style={{ color: 'darkblue', fontSize: 16, padding: 0}}>{owner}</h5>
                 <h3 style={{ color: 'black', fontSize: 10, padding: 0}}>ENGINE TYPE: </h3>
                 <h6 style={{ color: 'darkblue', fontSize: 16, padding: 0}}>{engine}</h6>
